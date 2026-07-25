@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Aspiring Software Engineer with foundations in Machine Learning, Big Data, Web Technologies, and AWS Cloud.">
+    <meta name="keywords"
+        content="Sabari Nathan, Aspiring Software Engineer, Machine Learning, Big Data, Web Development, AWS Cloud, Diabetes Prediction, React">
+    <meta name="author" content="Sabari Nathan">
+    <title>Sabari Nathan | Aspiring Software Engineer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Cursor Glow -->
+    <div class="cursor-glow" id="cursorGlow"></div>
+
+    <!-- Particle Canvas -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-bracket">&lt;</span>SN<span class="logo-bracket">/&gt;</span>
+            </a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active" data-section="home">Home</a></li>
+                <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+                <li><a href="#skills" class="nav-link" data-section="skills">Skills</a></li>
+                <li><a href="#projects" class="nav-link" data-section="projects">Projects</a></li>
+                <li><a href="#credentials" class="nav-link" data-section="credentials">Credentials</a></li>
+                <li><a href="#contact" class="nav-link" data-section="contact">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="https://github.com/Sabarinathan015" target="_blank" rel="noopener" class="nav-social"
+                    aria-label="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/sabari-nathan-a844512a4" target="_blank" rel="noopener"
+                    class="nav-social" aria-label="LinkedIn">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <button class="hamburger" id="hamburger" aria-label="Toggle Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu Overlay -->
+    <div class="mobile-menu-overlay" id="mobileOverlay"></div>
+    <div class="mobile-menu" id="mobileMenu">
+        <ul class="mobile-nav-links">
+            <li><a href="#home" class="mobile-link" data-section="home">Home</a></li>
+            <li><a href="#about" class="mobile-link" data-section="about">About</a></li>
+            <li><a href="#skills" class="mobile-link" data-section="skills">Skills</a></li>
+            <li><a href="#projects" class="mobile-link" data-section="projects">Projects</a></li>
+            <li><a href="#credentials" class="mobile-link" data-section="credentials">Credentials</a></li>
+            <li><a href="#contact" class="mobile-link" data-section="contact">Contact</a></li>
+        </ul>
+        <div class="mobile-socials">
+            <a href="https://github.com/Sabarinathan015" target="_blank" rel="noopener"><i
+                    class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/sabari-nathan-a844512a4" target="_blank" rel="noopener"><i
+                    class="fab fa-linkedin-in"></i></a>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge animate-on-scroll">
+                    <span class="badge-dot"></span>
+                    Available for opportunities
+                </div>
+                <h1 class="hero-title animate-on-scroll">
+                    Hi, I'm <span class="gradient-text">Sabari Nathan</span>
+                </h1>
+                <div class="hero-typewriter animate-on-scroll">
+                    <span class="typewriter-prefix">I'm a </span>
+                    <span class="typewriter-text" id="typewriter"></span>
+                    <span class="typewriter-cursor">|</span>
+                </div>
+                <p class="hero-description animate-on-scroll">
+                    Aspiring Software Engineer with strong foundations in Machine Learning, Big Data, Web
+                    Technologies, and AWS Cloud, seeking opportunities to contribute to real-world projects while
+                    continuously enhancing technical expertise and delivering business value.
+                </p>
+                <div class="hero-cta animate-on-scroll">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View Projects</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <span>Let's Connect</span>
+                        <i class="fas fa-handshake"></i>
+                    </a>
+                </div>
+                <div class="hero-stats animate-on-scroll">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="3">0</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="12">0</span>
+                        <span class="stat-label">Skills</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="3">0</span>
+                        <span class="stat-label">Certifications</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image animate-on-scroll">
+                <div class="image-wrapper">
+                    <div class="image-glow"></div>
+                    <div class="image-border"></div>
+                    <img src="sabari.jpeg" alt="Sabari Nathan" class="profile-img" id="profileImg">
+                    <div class="image-float-badge badge-top">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="image-float-badge badge-bottom">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator" id="scrollIndicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+            <span>Scroll Down</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about-section" id="about">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">&lt;about&gt;</span>
+                <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+                <p class="section-subtitle">Get to know the person behind the code</p>
+            </div>
+            <div class="about-grid">
+                <div class="about-image-col animate-on-scroll">
+                    <div class="about-image-card">
+                        <img src="sabari.jpeg" alt="Sabari Nathan" class="about-img">
+                        <div class="about-image-overlay">
+                            <div class="experience-badge">
+                                <span class="exp-icon"><i class="fas fa-laptop-code"></i></span>
+                                <div>
+                                    <strong>Aspiring</strong>
+                                    <span>Software Engineer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-content-col animate-on-scroll">
+                    <h3 class="about-heading">Career Objective</h3>
+                    <p class="about-text">
+                        Aspiring Software Engineer with strong foundations in Machine Learning, Big Data, Web
+                        Technologies, and AWS Cloud, seeking opportunities to contribute to real-world projects while
+                        continuously enhancing technical expertise and delivering business value.
+                    </p>
+                    <p class="about-text">
+                        Areas of Interest: Data Science &amp; Analytics (Big Data, Machine Learning), Web Development,
+                        and Cloud Computing (AWS).
+                    </p>
+                    <div class="about-info-grid">
+                        <div class="info-item">
+                            <span class="info-icon"><i class="fas fa-user"></i></span>
+                            <div>
+                                <span class="info-label">Name</span>
+                                <span class="info-value">Sabari Nathan</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon"><i class="fas fa-graduation-cap"></i></span>
+                            <div>
+                                <span class="info-label">B.Tech IT</span>
+                                <span class="info-value">Dr. Mahalingam College (Apr 2027, CGPA 8.22*)</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon"><i class="fas fa-envelope"></i></span>
+                            <div>
+                                <span class="info-label">Email</span>
+                                <span class="info-value">sabarisrv07@gmail.com</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon"><i class="fas fa-phone"></i></span>
+                            <div>
+                                <span class="info-label">Phone</span>
+                                <span class="info-value">+91 7010292196</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon"><i class="fas fa-school"></i></span>
+                            <div>
+                                <span class="info-label">HSC</span>
+                                <span class="info-value">SRV Boys Hr. Sec. School, 87% (Mar 2023)</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon"><i class="fas fa-book"></i></span>
+                            <div>
+                                <span class="info-label">SSLC</span>
+                                <span class="info-value">SSV Matric Hr. Sec. School, Pass (Mar 2021)</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon"><i class="fas fa-comments"></i></span>
+                            <div>
+                                <span class="info-label">Soft Skills</span>
+                                <span class="info-value">Communication, Active Listening, Analytical Thinking</span>
+                            </div>
+                        </div>
+                        <div class="info-item">
+                            <span class="info-icon"><i class="fas fa-map-marker-alt"></i></span>
+                            <div>
+                                <span class="info-label">Location</span>
+                                <span class="info-value">India</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-cta">
+                        <a href="https://github.com/Sabarinathan015" target="_blank" rel="noopener"
+                            class="btn btn-primary">
+                            <i class="fab fa-github"></i>
+                            <span>View GitHub</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/sabari-nathan-a844512a4" target="_blank" rel="noopener"
+                            class="btn btn-outline">
+                            <i class="fab fa-linkedin-in"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills-section" id="skills">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">&lt;skills&gt;</span>
+                <h2 class="section-title">My <span class="gradient-text">Skills</span></h2>
+                <p class="section-subtitle">Technical and soft skills aligned with software engineering roles</p>
+            </div>
+            <p class="about-text animate-on-scroll">
+                <strong>Technical Skills:</strong> Java, Python, C, HTML, CSS, JavaScript, MySQL, React, Git,
+                Machine Learning, Big Data, AWS Cloud.
+            </p>
+            <p class="about-text animate-on-scroll">
+                <strong>Soft Skills:</strong> Clear communication, active listening, analytical thinking, and logical
+                reasoning.
+            </p>
+            <div class="skills-grid">
+                <!-- Java -->
+                <div class="skill-card animate-on-scroll" data-tilt>
+                    <div class="skill-icon" style="--skill-color: #f89820;">
+                        <i class="fab fa-java"></i>
+                    </div>
+                    <h3 class="skill-name">Java</h3>
+                    <p class="skill-desc">Object-oriented programming &amp; backend development</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="80" style="--skill-color: #f89820;"></div>
+                    </div>
+                    <span class="skill-percentage">80%</span>
+                </div>
+                <!-- Python -->
+                <div class="skill-card animate-on-scroll" data-tilt>
+                    <div class="skill-icon" style="--skill-color: #3776ab;">
+                        <i class="fab fa-python"></i>
+                    </div>
+                    <h3 class="skill-name">Python</h3>
+                    <p class="skill-desc">Machine learning, data analysis &amp; scripting solutions</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="75" style="--skill-color: #3776ab;"></div>
+                    </div>
+                    <span class="skill-percentage">75%</span>
+                </div>
+                <!-- HTML5 -->
+                <div class="skill-card animate-on-scroll" data-tilt>
+                    <div class="skill-icon" style="--skill-color: #e34f26;">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h3 class="skill-name">HTML5</h3>
+                    <p class="skill-desc">Semantic markup &amp; web structure</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="90" style="--skill-color: #e34f26;"></div>
+                    </div>
+                    <span class="skill-percentage">90%</span>
+                </div>
+                <!-- CSS3 -->
+                <div class="skill-card animate-on-scroll" data-tilt>
+                    <div class="skill-icon" style="--skill-color: #1572b6;">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <h3 class="skill-name">CSS3</h3>
+                    <p class="skill-desc">Responsive styling &amp; modern animations</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="85" style="--skill-color: #1572b6;"></div>
+                    </div>
+                    <span class="skill-percentage">85%</span>
+                </div>
+                <!-- JavaScript -->
+                <div class="skill-card animate-on-scroll" data-tilt>
+                    <div class="skill-icon" style="--skill-color: #f7df1e;">
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                    <h3 class="skill-name">JavaScript</h3>
+                    <p class="skill-desc">Interactive web applications &amp; DOM manipulation</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="78" style="--skill-color: #f7df1e;"></div>
+                    </div>
+                    <span class="skill-percentage">78%</span>
+                </div>
+                <!-- Machine Learning -->
+                <div class="skill-card animate-on-scroll" data-tilt>
+                    <div class="skill-icon" style="--skill-color: #43b02a;">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3 class="skill-name">Machine Learning &amp; Big Data</h3>
+                    <p class="skill-desc">Model building, analytics, and predictive systems</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="70" style="--skill-color: #43b02a;"></div>
+                    </div>
+                    <span class="skill-percentage">70%</span>
+                </div>
+                <!-- Git -->
+                <div class="skill-card animate-on-scroll" data-tilt>
+                    <div class="skill-icon" style="--skill-color: #f05032;">
+                        <i class="fab fa-git-alt"></i>
+                    </div>
+                    <h3 class="skill-name">Git</h3>
+                    <p class="skill-desc">Version control &amp; collaborative workflows</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="75" style="--skill-color: #f05032;"></div>
+                    </div>
+                    <span class="skill-percentage">75%</span>
+                </div>
+                <!-- MySQL -->
+                <div class="skill-card animate-on-scroll" data-tilt>
+                    <div class="skill-icon" style="--skill-color: #4479a1;">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="skill-name">MySQL</h3>
+                    <p class="skill-desc">Database design &amp; management</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="72" style="--skill-color: #4479a1;"></div>
+                    </div>
+                    <span class="skill-percentage">72%</span>
+                </div>
+                <!-- React -->
+                <div class="skill-card animate-on-scroll" data-tilt>
+                    <div class="skill-icon" style="--skill-color: #61dafb;">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h3 class="skill-name">React</h3>
+                    <p class="skill-desc">Component-based frontend development</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="70" style="--skill-color: #61dafb;"></div>
+                    </div>
+                    <span class="skill-percentage">70%</span>
+                </div>
+                <!-- AWS -->
+                <div class="skill-card animate-on-scroll" data-tilt>
+                    <div class="skill-icon" style="--skill-color: #ff9900;">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3 class="skill-name">AWS Cloud</h3>
+                    <p class="skill-desc">Cloud fundamentals and deployment concepts</p>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-progress="65" style="--skill-color: #ff9900;"></div>
+                    </div>
+                    <span class="skill-percentage">65%</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects-section" id="projects">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">&lt;projects&gt;</span>
+                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                <p class="section-subtitle">Recent projects with measurable learning outcomes</p>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card animate-on-scroll" data-tilt>
+                    <div class="project-image">
+                        <div class="project-img-placeholder"
+                            style="--proj-gradient: linear-gradient(135deg, #4facfe, #00f2fe);">
+                            <i class="fas fa-heart-pulse fa-3x"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/Sabarinathan015" target="_blank" rel="noopener"
+                                class="project-link-btn">
+                                <i class="fab fa-github"></i>
+                                View Code
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-tags">
+                            <span class="project-tag">Python</span>
+                            <span class="project-tag">Machine Learning</span>
+                            <span class="project-tag">Healthcare</span>
+                        </div>
+                        <h3 class="project-title">Diabetes Prediction</h3>
+                        <p class="project-desc">04/12/2025 to 15/12/2025: Developed a reliable ML model to predict
+                            diabetes likelihood from patient health parameters for early detection and data-driven
+                            clinical decision support.</p>
+                        <div class="project-footer">
+                            <a href="https://github.com/Sabarinathan015" target="_blank" rel="noopener"
+                                class="project-github">
+                                <i class="fab fa-github"></i>
+                                <span>Source Code</span>
+                                <i class="fas fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card animate-on-scroll" data-tilt>
+                    <div class="project-image">
+                        <div class="project-img-placeholder"
+                            style="--proj-gradient: linear-gradient(135deg, #2563eb, #14b8a6);">
+                            <i class="fas fa-comments fa-3x"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/Sabarinathan015" target="_blank" rel="noopener"
+                                class="project-link-btn">
+                                <i class="fab fa-github"></i>
+                                View Code
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-tags">
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">Node.js</span>
+                            <span class="project-tag">Socket.IO</span>
+                        </div>
+                        <h3 class="project-title">Chat Chrono - Smart Scheduled Message System</h3>
+                        <p class="project-desc">05/11/2025 to 15/11/2025: Built a full-stack real-time chat app using
+                            React.js, Node.js, Express.js, and Socket.IO with instant and scheduled messaging
+                            features.</p>
+                        <div class="project-footer">
+                            <a href="https://github.com/Sabarinathan015" target="_blank" rel="noopener"
+                                class="project-github">
+                                <i class="fab fa-github"></i>
+                                <span>Source Code</span>
+                                <i class="fas fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card animate-on-scroll" data-tilt>
+                    <div class="project-image">
+                        <div class="project-img-placeholder"
+                            style="--proj-gradient: linear-gradient(135deg, #43e97b, #38f9d7);">
+                            <i class="fas fa-leaf fa-3x"></i>
+                        </div>
+                        <div class="project-overlay">
+                            <a href="https://github.com/Sabarinathan015/HerbsTea" target="_blank"
+                                rel="noopener" class="project-link-btn">
+                                <i class="fab fa-github"></i>
+                                View Code
+                            </a>
+                        </div>
+                    </div>
+                    <div class="project-body">
+                        <div class="project-tags">
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">JavaScript</span>
+                        </div>
+                        <h3 class="project-title">Herbs Tea Website</h3>
+                        <p class="project-desc">02/09/2025 to 04/09/2025: Developed a responsive herbs tea website
+                            with product listing and cart functionality using HTML, CSS, and JavaScript.</p>
+                        <div class="project-footer">
+                            <a href="https://github.com/Sabarinathan015/HerbsTea" target="_blank"
+                                rel="noopener" class="project-github">
+                                <i class="fab fa-github"></i>
+                                <span>Source Code</span>
+                                <i class="fas fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Credentials Section -->
+    <section class="section" id="credentials">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">&lt;credentials&gt;</span>
+                <h2 class="section-title">Education, <span class="gradient-text">Internship &amp; Achievements</span></h2>
+                <p class="section-subtitle">Academic profile and career milestones</p>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card animate-on-scroll" data-tilt>
+                    <div class="project-body">
+                        <h3 class="project-title">Education</h3>
+                        <p class="project-desc">B.Tech Information Technology, Dr. Mahalingam College of Engineering and
+                            Technology, Pollachi (April 2027) - CGPA 8.22* (up to fifth semester).</p>
+                        <p class="project-desc">HSC, SRV Boys Hr. Sec. School, Rasipuram (March 2023) - 87%.</p>
+                        <p class="project-desc">SSLC, SSV Matric Hr. Sec. School, Kuttapatti (March 2021) - Pass.</p>
+                    </div>
+                </div>
+                <div class="project-card animate-on-scroll" data-tilt>
+                    <div class="project-body">
+                        <h3 class="project-title">Internship</h3>
+                        <p class="project-desc">Encapsulate IT, Coimbatore - Web Development Intern
+                            (06/06/2025 to 23/06/2025).</p>
+                        <p class="project-desc">Developed a Herbs Tea website using HTML, CSS, and JavaScript to
+                            showcase projects and skills.</p>
+                    </div>
+                </div>
+                <div class="project-card animate-on-scroll" data-tilt>
+                    <div class="project-body">
+                        <h3 class="project-title">Certifications &amp; Achievements</h3>
+                        <p class="project-desc">Introduction to Industry 4.0 and IoT - NPTEL, Dec 2025 (64% + Elite).</p>
+                        <p class="project-desc">Crash Course on Python - Google (Coursera), Nov 2025.</p>
+                        <p class="project-desc">Introduction to Front-End Development - Meta (Coursera), Jan 2025.</p>
+                        <p class="project-desc">Participated in Technical Hackathon, Coimbatore Institute of Technology
+                            (April 2025).</p>
+                        <p class="project-desc">Secured First Prize in Inter College Quiz Competition, Sri Krishna
+                            College of Engineering (Oct 2024).</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+        <div class="container">
+            <div class="section-header animate-on-scroll">
+                <span class="section-tag">&lt;contact&gt;</span>
+                <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+                <p class="section-subtitle">Let's work together on something awesome</p>
+            </div>
+            <div class="contact-grid">
+                <div class="contact-info animate-on-scroll">
+                    <h3 class="contact-heading">Let's Talk!</h3>
+                    <p class="contact-text">
+                        I'm always open to discussing new projects, creative ideas, or opportunities to be part of your
+                        vision.
+                        Feel free to reach out!
+                    </p>
+                    <div class="contact-cards">
+                        <div class="contact-card">
+                            <div class="contact-card-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <span class="contact-card-label">Email</span>
+                                <span class="contact-card-value">sabarisrv07@gmail.com</span>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-card-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div>
+                                <span class="contact-card-label">Phone</span>
+                                <span class="contact-card-value">+91 7010292196</span>
+                            </div>
+                        </div>
+                        <div class="contact-card">
+                            <div class="contact-card-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <span class="contact-card-label">Location</span>
+                                <span class="contact-card-value">India</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-social-links">
+                        <a href="https://github.com/Sabarinathan015" target="_blank" rel="noopener"
+                            class="contact-social" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/sabari-nathan-a844512a4" target="_blank" rel="noopener"
+                            class="contact-social" aria-label="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-form-wrapper animate-on-scroll">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <div class="input-wrapper">
+                                <i class="fas fa-user input-icon"></i>
+                                <input type="text" id="contactName" name="name" placeholder="Your Name" required>
+                                <span class="input-focus-line"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-wrapper">
+                                <i class="fas fa-envelope input-icon"></i>
+                                <input type="email" id="contactEmail" name="email" placeholder="Your Email" required>
+                                <span class="input-focus-line"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-wrapper">
+                                <i class="fas fa-tag input-icon"></i>
+                                <input type="text" id="contactSubject" name="subject" placeholder="Subject">
+                                <span class="input-focus-line"></span>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="input-wrapper textarea-wrapper">
+                                <i class="fas fa-comment input-icon"></i>
+                                <textarea id="contactMessage" name="message" placeholder="Your Message" rows="5"
+                                    required></textarea>
+                                <span class="input-focus-line"></span>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit" id="submitBtn">
+                            <span class="btn-text">Send Message</span>
+                            <span class="btn-loading"><i class="fas fa-spinner fa-spin"></i></span>
+                            <span class="btn-success"><i class="fas fa-check"></i> Sent!</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="logo-bracket">&lt;</span>SN<span class="logo-bracket">/&gt;</span>
+                </div>
+                <p class="footer-text">Designed & Built by Sabari Nathan</p>
+                <div class="footer-socials">
+                    <a href="https://github.com/Sabarinathan015" target="_blank" rel="noopener" aria-label="GitHub"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/sabari-nathan-a844512a4" target="_blank" rel="noopener"
+                        aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+                <p class="footer-copy">&copy; 2026 Sabari Nathan. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to Top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
